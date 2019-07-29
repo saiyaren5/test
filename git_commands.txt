@@ -1,0 +1,111 @@
+https://github.com
+
+
+saiyaren5
+s5wangxu
+
+配置用户名：
+git config --global user.name "saiyaren5"
+
+配置邮箱：
+git config --global user.email "867917428@qq.com"
+
+工作区==》暂存区==》版本库
+git init
+生成.git
+
+git add demo001.txt
+git commit -m "注释信息"
+
+时光穿梭：
+git status
+
+查看修改的内容
+git diff
+
+git log
+git log --pretty=oneline
+
+
+版本回退
+git reset --hard HEAD^
+git reset --hard HEAD^^
+git reset --hard HEAD~2
+
+git reset --hard 版本号
+git reset --hard b3787c48c8cf424a1fc405f9db1985d541c0f603
+
+记录你的每一次命令
+git reflog
+
+文件回退到版本库中一致的文件
+让文件回到最后一次git commit或git add时的状态
+git checkout -- filename
+
+
+
+远程仓库
+创建SSH Key:
+1,ssh-keygen -t rsa -C "你的邮箱地址"
+2,记录.ssh目录位值
+ssh:id_rsa(私钥) id_rsa.pub(公钥)
+
+ssh -T git@github.com
+
+创建远程仓库
+
+关联远程仓库
+git remote add origin 远程仓库地址
+
+删除关联
+git remote rm origin
+
+
+推送本地内容至远程仓库
+git push origin master
+
+拉取程仓库至本地仓库
+git pull origin master --allow-unrelated-histories
+
+创建文件：
+touch .gitignore
+
+从零开发：
+先有远程库，再有本地库
+克隆：git clone 远程库地址
+
+git add .
+git commit * -m "xxx"
+
+删除ssh key
+rm -rf .ssh
+
+分支管理
+创建分支：
+git branch 分支名
+切换分支：
+git checkout 分支名
+创建与切换同时进行：
+git checkout -b 分支名
+
+查看当前分支：
+git branch
+
+切换到master分支
+git checkout master
+把dev分支的成果合并到master
+git merge dev
+
+创建远程分支
+git push --set-upstream origin xxxx
+
+标签管理
+
+
+
+
+
+
+
+
+
